@@ -23,11 +23,22 @@ There are a few previous approaches to solve the problem: salience map, simplifi
 
 A strength of network dissection is that the key idea relates to analyzing the visual concept associated with units within the network, which is a concept that image-based neural networks employ. Thus, network dissection can be applied to a wide range of models rather than specific model architectures that the algorithm is particularly designed for. While this does restrict network dissection to image-based tasks, the versatility of network dissection streamlines the understanding of this type of model significantly. In addition, network dissection can be applied to multiple different tasks, as long as the units learn relations to visual concepts. This is exemplified within this paper as network dissection is applied to image classification. The variety of tasks and model architectures that network dissection applies to without the need of heavy customization makes it a powerful tool to analyze the role of individual hidden units and find insights about the black box natures of neural networks.
 
+<ul class="list-style-none">
+{% for contributor in site.github.contributors %}
+  <li class="d-inline-block mr-1">
+     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"></a>
+  </li>
+{% endfor %}
+</ul>
 ---
 
 ## Methods
 ### FocusedDropout
+FocusedDropout is a highly targeted approach that makes the network focus on the most important features (based on the idea of Network Dissection) while dropping other features. The methodology for FocusedDropout is shown as Figure 1. To get a visual understanding of FocusedDropout, Figure 2 shows the process of creating the binary mask that will be applied to every channel based on the highest activation channel. For this paper, we will be using ResNet-18 for the CNN and CIFAR-10 for the dataset.
 ### Input Gradient Regularization
+Input Gradient Regularization was initially introduced as "double back-propagation", and involved training neural networks by minimizing quadratic loss of the network as well as the rate of change of loss with respect to the input features. In this particular implementation, cross-entropy loss is used instead. The goal of this approach is to ensure that even if any input changes slightly, the KL divergence between predictions and labels will not change significantly. In turn, it serves as an interesting means to prevent adversarial attacks. In our paper, we aim to implement this method to check for general improvement in network accuracy, and combine it with network dissection to check for improved accuracy and interpretability. We formulate our overall loss function for this method as:
+
+The object function is presented more concisely as:
 
 ---
 
