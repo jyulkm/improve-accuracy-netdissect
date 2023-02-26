@@ -1,23 +1,14 @@
 ---
 layout: default
-title: Introduction
+title: Network Dissection
 nav_order: 2
 ---
 
-# Introduction
+# Network Dissection
 {: .no_toc }
 
-Deep Neural Networks consist of a large number of hidden layers and units, the functionality of which we are not fully aware. 
-While we may understand feature engineering at the input level and the final output classification, the intermediate hidden features 
-are somewhat of a “black box”. It is not clear how the network is solving a task of high complexity. However, it has been observed that 
-many hidden units are actually associated with concepts that are human-interpretable. Thus, it becomes important to really understand the functionality and 
-contribution that each of these hidden units has to the final output of the network. In order to understand this, network dissection is used - a method to correlate 
-semantic concepts identified within a complex convolutional neural network (CNN). It aims to identify, visualize and quantify the contributions of each individual 
-unit within a deep CNN.
+The process of network dissection can determine what visual concept in the real world a unit most strongly represents despite not explicitly teaching the model this concept in the training data. The validity of network dissection can be tested by activating or deactivating units based on our new understanding of the encoded representation to determine the importance of the unit to the model performance in specific tasks. By understanding the role of hidden units, we would have a better understanding of network structure, enable interaction between humans and models, and understand how adversarial attacks work.
 
-Findings from network dissection show us that different groups of neurons correspond to different human-interpretable concepts such as trees, snow, etc. Taking this 
-one step further, the goal of this paper will be to find out if we can improve a network’s prediction accuracy given this information regarding each neuron’s roles. 
-Until recently, most methods that aims to improve neural networks do not include specific knowledge about these networks, such as regularization and fine-tuning. 
-A method that we will implement in this paper is FocusedDropout: a dropout method that retains neurons that contain target-related features while discarding other 
-neurons. Additionally, we are also incorporating input gradient regularization, which involves minimizing the rate of change of loss with respect to the input features. 
-This is said to improve the robustness as well as the interpretability of the network.
+There are a few previous approaches to solve the problem: salience map, simplified surrogate model, and training explanation network. The salience map approach presents the position of an input image that the network would look at making a decision. Although this helps clarify how a neural network decides on a prediction through a simulation of human sight, this approach lacks an explanation of the weights within the model. An explanation like this tends to be more general rather than our desired approach of understanding individual units and how they work together. The simplified surrogate model is used to simplify the complex behavior of neural networks and training explanation networks generate explanations that can be interpreted by humans. However, these two approaches have huge flaws as they not only fail to directly explain the internal computation of a neural network, but also require training an entire auxiliary model. The commitment of time and resources for these approaches may not be practical for the understanding we wish to achieve. We present a network dissection algorithm which explores the neural network more in depth. Network dissection provides direct examination of the unit weights and is effective without the need to train an auxiliary model. This would allow for greater focus in analysis as a human interface for controlling the network and even gain insight about the black box internals of neural networks.
+
+A strength of network dissection is that the key idea relates to analyzing the visual concept associated with units within the network, which is a concept that image-based neural networks employ. Thus, network dissection can be applied to a wide range of models rather than specific model architectures that the algorithm is particularly designed for. While this does restrict network dissection to image-based tasks, the versatility of network dissection streamlines the understanding of this type of model significantly. In addition, network dissection can be applied to multiple different tasks, as long as the units learn relations to visual concepts. This is exemplified within this paper as network dissection is applied to image classification. The variety of tasks and model architectures that network dissection applies to without the need of heavy customization makes it a powerful tool to analyze the role of individual hidden units and find insights about the black box natures of neural networks.
