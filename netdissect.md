@@ -36,7 +36,7 @@ using the VGG-16 architecture to classify images into 365 scene
 categories. Since the last convolution layer has the most
 object-detecting units \[1\], we mainly focus on conv5_3 layer.
 
-The units compute activation functions $$a_u(x, p)$$ that output a signal
+The units compute activation functions $a_u(x, p)$ that output a signal
 at every position p of the image given a test image x. Bilinear
 upsampling facilitates the visualization and analysis of filters with
 low-resolution outputs. Denote by $t_u$ the top 1% quantile level for
@@ -72,8 +72,9 @@ last convolutional layer, while the total number of object parts peaks
 two layers earlier, at layer conv5_1, where units match 28 object
 classes, 25 parts, and nine materials.
 
+## Segment Concepts in Conv5_3 Layer
 ![Alt Text](images/graph.jpg)
-
+## Semantic Regions
 ![Alt Text](images/conv_figure.PNG)
-
+## Labeled Concept Detector Units on Cifar-100(Left) and Places365(Right)
 ![Alt Text](images/unit.png)
