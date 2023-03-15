@@ -1,13 +1,13 @@
 // Base element style overrides
 // stylelint-disable selector-no-type, selector-max-type, selector-max-specificity, selector-max-id
-
+$link-color: #00f;
 * {
   box-sizing: border-box;
 }
 
 ::selection {
   color: $white;
-  background: $link-color white;
+  background: $link-color;
 }
 
 html {
