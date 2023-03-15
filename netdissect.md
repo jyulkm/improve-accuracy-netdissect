@@ -41,7 +41,7 @@ The units compute activation functions $a_u(x, p)$ that output a signal
 at every position p of the image given a test image x. Bilinear
 upsampling facilitates the visualization and analysis of filters with
 low-resolution outputs. Denote by $t_u$ the top 1% quantile level for
-$a_u$: That is, writing $$\mathbb{P}_{x_p}[\cdot]$$ to indicate the
+$a_u$: That is, writing $$$\mathbb{P}_{x_p}[\cdot]$$ to indicate the
 probability that an event is true when sampled over all positions and
 images, we define the threshold
 $$$t_u \equiv \mathbb{P}_{x_p}[a_u(x , p) > t] \geq 0.01$$$. Activation
