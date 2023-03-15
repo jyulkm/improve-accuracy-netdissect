@@ -30,4 +30,4 @@ Within layer conv 3, we find 512 units matching 51 object classes, 22 parts, 12 
 
 ![Alt Text](images/conv_figure.PNG)
 
-![Alt Text](images/unit.png)
+![Alt Text](images/unit.PNG)
