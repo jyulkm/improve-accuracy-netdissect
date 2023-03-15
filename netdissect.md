@@ -44,14 +44,14 @@ low-resolution outputs. Denote by $t_u$ the top 1% quantile level for
 $a_u$: That is, writing $\mathbb{P}_{x_p}[\cdot]$ to indicate the
 probability that an event is true when sampled over all positions and
 images, we define the threshold
-$$$t_u \equiv \mathbb{P}_{x_p}[a_u(x , p) > t] \geq 0.01$$$. Activation
+$t_u \equiv \mathbb{P}_{x_p}[a_u(x , p) > t] \geq 0.01$. Activation
 regions above the threshold are highlighted in visualizations by
-$$$\{p | a_u(x, p) > t_u\}$$$. Fig.2 shows how this region corresponds to
+$\{p | a_u(x, p) > t_u\}$. Fig.2 shows how this region corresponds to
 semantics, for example, the heads of everyone in the picture. We use a
 computer vision segmentation model \[5\] that predicts the presence of
 the visual concept c within image x at position p based on the agreement
 between each filter and the visual concept c.
-$$$s_c : (x, p) \rightarrow \{0, 1\}$$$ is trained to identify filters that
+$s_c : (x, p) \rightarrow \{0, 1\}$ is trained to identify filters that
 match semantic concepts. Using the intersection over union (IoU) ratio,
 we quantify the agreement between concept c and unit u:
 
