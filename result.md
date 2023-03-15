@@ -16,20 +16,16 @@ For Network Dissection Intervention, we trained VGG-16 on Places365 and experime
 
 For both modifying unit output and weights of the layer, we experimented with dividing and multiplying constant numbers and stopped the experiment when the accuracy got below the baseline. The  results are shown in Table 1.
 
-
 ---
-Unit Type & Target: worst unit output division, worst unit weight division, best unit weight division
-Baseline: 76.58% | 76.52%, 75.91%
-Divide/Multiply 2: 76.58%, **76.6%**, 76.02%
-Divide/Multiply 3: 76.58%, 76.35%, 75.56% 
----
+#### Network Dissect Intervention Accuracy
 
 | Unit Type & Target | Baseline | Divide/Multiply 2 | Divide/Multiply 3 |
-| -------- | -------- |
+|:-------------------|:---------|:------------------|:------------------|
 | worst unit output division | 76.58% | 76.52% | 75.91% |
 | worst unit weight division | 76.58% | **76.6%** | 76.02% |
 | best unit weight division | 76.58% | 76.35% | 75.56% |
 ### Network Dissect Intervention Accuracy
+---
 
 
 ## Input Gradient Regularization \& FocusedDropout
