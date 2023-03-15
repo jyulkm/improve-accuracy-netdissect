@@ -1,8 +1,7 @@
 ---
-title: FocusedDropout
+title: Method - FocusedDropout
 layout: home
-parent: Methods
-nav_order: 2
+nav_order: 4
 ---
 
 # Focused Dropout
@@ -13,6 +12,6 @@ other features. The methodology for FocusedDropout is shown as Figure 1. To get 
 binary mask that will be applied to every channel based on the highest activation channel. For this paper, we will be using ResNet-18 for the CNN and CIFAR-10 for 
 the dataset.
 
-![Alt Text](/Methods/focuseddropout.png)
+![Alt Text](images/focuseddropout.png)
 
-![Alt Text](/Methods/focuseddropout_binarymask.png)
+![Alt Text](images/focuseddropout_binarymask.png)
