@@ -25,3 +25,9 @@ This IoU ratio is computed on the set of held-out validation set images. Within 
 
 
 Within layer conv 3, we find 512 units matching 51 object classes, 22 parts, 12 materials, and eight colors. In some cases, more than one unit matches the same visual concept. Fig.1 shows the frequency of units matching segmented concepts with unit types in layer conv5\_3, excluding units with IoU ratios of 4 or 4\%. A total of 28 object classes, 25 parts, nine materials, and eight colors can be detected by units at the last convolutional layer, while the total number of object parts peaks two layers earlier, at layer conv5\_1, where units match 28 object classes, 25 parts, and nine materials.
+
+![Alt Text](images/graph.jpg)
+
+![Alt Text](images/conv_figure.PNG)
+
+![Alt Text](images/unit.png)
