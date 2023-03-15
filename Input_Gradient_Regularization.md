@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Input Gradient Regularization
-parent: Methods
-nav_order: 3
+title: Method - Input Gradient Regularization
+nav_order: 5
 ---
 
 # Input Gradient Regularization
