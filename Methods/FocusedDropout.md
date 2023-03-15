@@ -2,7 +2,7 @@
 title: FocusedDropout
 layout: home
 parent: Methods
-nav_order: 1
+nav_order: 2
 ---
 
 # Focused Dropout
