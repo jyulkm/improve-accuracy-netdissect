@@ -2,7 +2,7 @@
 layout: default
 title: Network Dissection
 nav_order: 2
-use_math: true
+mathjax: true
 ---
 
 # Network Dissection
