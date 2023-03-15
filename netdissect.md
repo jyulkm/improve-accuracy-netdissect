@@ -41,7 +41,7 @@ The units compute activation functions $a_u(x, p)$ that output a signal
 at every position p of the image given a test image x. Bilinear
 upsampling facilitates the visualization and analysis of filters with
 low-resolution outputs. Denote by $t_u$ the top 1% quantile level for
-$a_u$: That is, writing $$$\mathbb{P}_{x_p}[\cdot]$$$ to indicate the
+$a_u$: That is, writing $$$mathbb{P}_{x_p}[\cdot]$$$ to indicate the
 probability that an event is true when sampled over all positions and
 images, we define the threshold
 $$$t_u \equiv \mathbb{P}_{x_p}[a_u(x , p) > t] \geq 0.01$$$. Activation
@@ -55,7 +55,7 @@ $$$s_c : (x, p) \rightarrow \{0, 1\}$$$ is trained to identify filters that
 match semantic concepts. Using the intersection over union (IoU) ratio,
 we quantify the agreement between concept c and unit u:
 
-$$IoU_{u,c} = \frac{\mathbb{P}_{x,p}[s_c(x,p)\wedge(a_u(x,p)>t_u)]}{\mathbb{P}_{x,p}[s_c(x,p)\vee(a_u(x,p)>t_u)]}$$$
+$$$IoU_{u,c} = \frac{\mathbb{P}_{x,p}[s_c(x,p)\wedge(a_u(x,p)>t_u)]}{\mathbb{P}_{x,p}[s_c(x,p)\vee(a_u(x,p)>t_u)]}$$$
 
 This IoU ratio is computed on the set of held-out validation set images.
 Within this validation set, each unit is scored against 1,825 segmented
