@@ -47,7 +47,7 @@ $\{p | a_u(x, p) > t_u\}$. Fig.2 shows how this region corresponds to semantics,
 computer vision segmentation model \[5\] that predicts the presence of the visual concept c within image x at position p based on the agreement between each filter and the visual concept c. $s_c : (x, p) \rightarrow \{0, 1\}$ is trained to identify filters that match semantic concepts. Using the intersection over union (IoU) ratio,
 we quantify the agreement between concept c and unit u:
 
-$$IoU_{u,c} = \frac{\mathbb{P}_{x,p}[s_c(x,p)\wedge(a_u(x,p)>t_u)]}{\mathbb{P}_{x,p}[s_c(x,p)\vee(a_u(x,p)>t_u)]}$$
+![Alt Text](images/iou.PNG)
 
 This IoU ratio is computed on the set of held-out validation set images.
 Within this validation set, each unit is scored against 1,825 segmented
