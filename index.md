@@ -4,7 +4,7 @@ layout: home
 nav_order: 1
 ---
 
-# Improve Accuracy via Network Dissection
+# Improving Network Accuracy via Network Manipulation
 {: .fs-9 }
 
 ---
