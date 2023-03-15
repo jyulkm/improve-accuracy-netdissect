@@ -2,7 +2,7 @@
 layout: default
 title: Input Gradient Regularization
 parent: Methods
-nav_order: 2
+nav_order: 3
 ---
 
 # Input Gradient Regularization
