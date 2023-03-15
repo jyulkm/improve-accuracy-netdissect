@@ -44,7 +44,7 @@ low-resolution outputs. Denote by $t_u$ the top 1% quantile level for
 $a_u$: That is, writing $\mathbb{P}_{x_p}[\cdot]$ to indicate the
 probability that an event is true when sampled over all positions and
 images, we define the threshold
-$t_u \equiv \mathbb{P}_{x_p}[a_u(x , p) > t] \geq 0.01$. Activation
+$$t_u \equiv \mathbb{P}_{x_p}[a_u(x , p) > t] \geq 0.01$$. Activation
 regions above the threshold are highlighted in visualizations by
 $\{p | a_u(x, p) > t_u\}$. Fig.2 shows how this region corresponds to
 semantics, for example, the heads of everyone in the picture. We use a
