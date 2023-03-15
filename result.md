@@ -26,6 +26,7 @@ For both modifying unit output and weights of the layer, we experimented with di
 | worst unit output division | 76.58% | 76.52% | 75.91% |
 | worst unit weight division | 76.58% | **76.6%** | 76.02% |
 | best unit weight division | 76.58% | 76.35% | 75.56% |
+
 ---
 
 
