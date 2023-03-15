@@ -3,6 +3,8 @@ title_abbreviated_length: 100
 description: A starter template for a Jeykll site using the Just the Docs theme!
 theme: just-the-docs
 
+mathjax: true
+
 url: https://thyungkim.github.io/Improve-Accuracy-via-Netdissect
 
 aux_links:
