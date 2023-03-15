@@ -10,9 +10,11 @@ nav_order: 4
 ## Network Dissection Intervention
 For Network Dissection Intervention, we trained VGG-16 on Places365 and experimented with conv5\_3 layer as the layer had units that captured most objects. To test the hypothesis, we performed the following steps:
 
-> 1.Unit Deletion Analysis: We calculated the accuracy of the VGG16 model with and without each unit in layer conv5\_3 to identify the best and worst performing units
-> 2.Unit Activation Analysis: We modified the output of layer conv5\_3 for the worst and best-performing units and reevaluated the accuracy of the model
-> 3.Weight Modification Analysis: We modified the weights of layer conv5\_3 for the worst and best-performing units and evaluated the accuracy of the model
+> 1.Unit Deletion Analysis: We calculated the accuracy of the VGG16 model with and without each unit in layer conv5\_3 to identify the best and worst performing units.
+
+> 2.Unit Activation Analysis: We modified the output of layer conv5\_3 for the worst and best-performing units and reevaluated the accuracy of the model.
+
+> 3.Weight Modification Analysis: We modified the weights of layer conv5\_3 for the worst and best-performing units and evaluated the accuracy of the model.
 
 For both modifying unit output and weights of the layer, we experimented with dividing and multiplying constant numbers and stopped the experiment when the accuracy got below the baseline. The  results are shown in Table 1.
 
@@ -35,7 +37,6 @@ For FocusedDropout and Input Gradient Regularization, we trained our VGG-16 on C
 >* CosineAnnealingLR Scheduler (T\_max = 200)
 >* 150 Epochs
 
-The classification results are shown in Table below.
 ---
 #### Accuracy of VGG-16 on CIFAR-100 (150 epochs)
 
