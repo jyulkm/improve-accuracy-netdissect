@@ -36,7 +36,7 @@ using the VGG-16 architecture to classify images into 365 scene
 categories. Since the last convolution layer has the most
 object-detecting units \[1\], we mainly focus on conv5_3 layer.
 
-The units compute activation functions $a_u(x, p)$ that output a signal
+The units compute activation functions $$a_u(x, p)$$ that output a signal
 at every position p of the image given a test image x. Bilinear
 upsampling facilitates the visualization and analysis of filters with
 low-resolution outputs. Denote by $t_u$ the top 1% quantile level for
