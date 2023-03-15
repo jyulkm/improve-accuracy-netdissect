@@ -1,8 +1,7 @@
 ---
-title: Network Dissection Intervention
+title: Method - Network Dissection Intervention
 layout: home
-parent: Methods
-nav_order: 1
+nav_order: 3
 ---
 
 # Network Dissection Intervention
