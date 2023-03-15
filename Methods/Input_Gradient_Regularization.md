@@ -13,8 +13,8 @@ approach is to ensure that even if any input changes slightly, the KL divergence
 an interesting means to prevent adversarial attacks. In our paper, we aim to implement this method to check for general improvement in network accuracy, and combine 
 it with network dissection to check for improved accuracy and interpretability. We formulate our overall loss function for this method as:
 
-![Alt Text](/images/IGR_Loss.png)
+![Alt Text](./images/IGR_Loss.png)
 
 The object function is presented more concisely as:
 
-![Alt Text](/images/IGR_obj.png)
+![Alt Text](./images/IGR_obj.png)
